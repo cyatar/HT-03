@@ -28,17 +28,17 @@ Project File Date:  04/13/2024
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'F:\keil\ARM\ARMCC\Bin'
 Build target 'TEST1'
 compiling HT03.c...
-HT03.h(35): warning:  #1295-D: Deprecated declaration can_filter_init - give arg types
+HT03.h(49): warning:  #1295-D: Deprecated declaration can_filter_init - give arg types
   void can_filter_init();
-HT03.h(47): warning:  #1-D: last line of file ends without a newline
+HT03.h(60): warning:  #1-D: last line of file ends without a newline
   #endif
-HT03.c(168): warning:  #177-D: variable "tmp_value"  was declared but never referenced
+HT03.c(212): warning:  #177-D: variable "position"  was declared but never referenced
+  						uint16_t position = (data[2] << 8)|data[1];
+HT03.c(196): warning:  #177-D: variable "tmp_value"  was declared but never referenced
       uint16_t tmp_value;
-HT03.c(82): warning:  #177-D: function "uint_to_float"  was declared but never referenced
-  static float uint_to_float(int x_int, float x_min, float x_max, int bits)
 HT03.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=7418 RO-data=450 RW-data=32 ZI-data=1736  
+Program Size: Code=6310 RO-data=450 RW-data=16 ZI-data=1800  
 FromELF: creating hex file...
 "TEST1\TEST1.axf" - 0 Error(s), 4 Warning(s).
 
@@ -64,7 +64,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.5.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

@@ -99,6 +99,11 @@ int main(void)
 	
 	
 	HAL_Delay(10);
+	
+	// you should set your motor init here
+	
+	
+	
   
 //	CanComm_ControlCmd(CMD_ZERO_POSITION,0x08,hcan1);
 //	HAL_Delay(10);
@@ -110,28 +115,20 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	
+	
+	
+	
+	
+	
+	
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	//		CanComm_ControlCmd(CMD_ZERO_POSITION,0x008,hcan1);
-		// HAL_Delay(10);
-		//	CanComm_ControlCmd(CMD_MOTOR_MODE,0x008,hcan1);
-	//	 HAL_Delay(10);
-	//   CanComm_SendControlPara(6.18,0,15,0.2,0,0x008,hcan1);
-	//	 HAL_Delay(10);
-		//	CanComm_ControlCmd(CMD_MOTOR_MODE,0x008,hcan1);
 		
-			CanComm_ControlCmd(CMD_ZERO_POSITION,0x008,hcan1);
-		//	HAL_Delay(10);
-			CanComm_ControlCmd(CMD_MOTOR_MODE,0x008,hcan1);
-		//	HAL_Delay(10);
-		//CanComm_ControlCmd(CMD_RESET_MODE,0x008,hcan1);
-		//	HAL_Delay(10);
 
-	   CanComm_SendControlPara(3.14,0,7.5,0.2,0,0x008,hcan1);
-	//		HAL_Delay(10);
 	
   }
   /* USER CODE END 3 */
